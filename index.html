@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <!-- scroll top -->
+    <a href="#home" class="scroll-top d-block">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </a>
+    <!-- scroll top end-->
+
+    <header class="py-4">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center py-4"
+      >
+        <a href="" class="logo">
+          <img src="assets/image/logo.webp" alt="" />
+        </a>
+        <nav class="align-items-center gap-5 d-flex">
+          <ul class="pe-0 d-none d-lg-flex gap-5 mb-0 align-items-center">
+            <li class="dropdown">
+              <a href="" class="dropbtn"
+                >Home <span><i class="fa-solid fa-caret-down"></i></span
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li>
+              <a href=""
+                >Services <span><i class="fa-solid fa-caret-down"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                >Pages <span><i class="fa-solid fa-caret-down"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="">Blog </a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+          
+          <div class="bargar-menu d-block d-lg-none">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </nav>
+
+        <div class="search d-none d-lg-flex align-items-center gap-3">
+          
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a href="" class="headerbtn">About Us</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="side-menu p-5" id="home">
+      <div class="bg">
+        <div class="span bg1"></div>
+        <div class="span bg2"></div>
+        <div class="span bg3"></div>
+      </div>
+      <div
+        class="menu-header d-flex align-items-center justify-content-between"
+      >
+        <div class="logo">
+          <img src="assets/image/white-logo.webp" alt="" />
+        </div>
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <form
+        class="search d-flex gap-3 col-12 col-md-8 col-lg-5 mt-5 justify-content-between align-items-center"
+      >
+        <input type="text" placeholder="Keywords" /><label for="">
+          <i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+      </form>
+      <div
+        class="menu-galary d-flex justify-content-between my-5 py-3 flex-wrap"
+      >
+        <ul class="menu ps-0 list-unstyled">
+          <li class="py-3"><a href="">Home</a></li>
+          <li class="py-3"><a href="">About</a></li>
+          <li class="py-3"><a href="">Services</a></li>
+        </ul>
+        <div
+          class="gallary col-12 col-lg-5 d-flex justify-content-between flex-wrap"
+        >
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery1.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery2.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery3.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery4.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery5.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <img src="assets/image/side-menu-gallery6.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="social-media d-flex justify-content-center gap-4">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </section>
+    <!-- banner sectio start here -->
+    <section class="banner">
+      <div id="result"></div>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex justify-content-around flex-wrap-reverse">
+            <div class="left-img col-12 col-lg-5">
+              <div class="back-img">
+                <img src="assets/image/frame.webp" alt="" class="frame" />
+                <img src="assets/image/like-twitter.webp" alt="" class="like" />
+                <img
+                  src="assets/image/certified.webp"
+                  alt=""
+                  class="certified"
+                />
+                <img
+                  src="assets/image/instagram.webp"
+                  alt=""
+                  class="instagram"
+                />
+              </div>
+              <div class="front-img">
+                <img src="assets/image/banner-hero.webp" alt="" />
+              </div>
+            </div>
+            <div class="right-content col-12 col-lg-6">
+              <div class="merketing-text">marketing consulting's</div>
+              <h1>
+                <div class="ino">Innovative</div>
+                <div class="solu">Solutions</div>
+              </h1>
+              <p class="py-3">
+                Every pleasure is to be welcomed and every pain avoided. <br />
+                and every pain avoided. certain circumstances ands
+              </p>
+              <a href="" class="commonbtn d-inline-flex gap-4"
+                >EXPLORE MORE
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide d-flex justify-content-around flex-wrap-reverse">
+            <div class="left-img col-12 col-lg-5">
+              <div class="back-img">
+                <img src="assets/image/frame.webp" alt="" class="frame" />
+                <img src="assets/image/like-twitter.webp" alt="" class="like" />
+                <img
+                  src="assets/image/certified.webp"
+                  alt=""
+                  class="certified"
+                />
+                <img
+                  src="assets/image/instagram.webp"
+                  alt=""
+                  class="instagram"
+                />
+              </div>
+              <div class="front-img">
+                <img src="assets/image/banner-hero.webp" alt="" />
+              </div>
+            </div>
+            <div class="right-content col-12 col-lg-6">
+              <div class="merketing-text">marketing consulting's</div>
+              <h1>
+                <div class="ino">Innovative</div>
+                <div class="solu">Solutions</div>
+              </h1>
+              <p class="py-3">
+                Every pleasure is to be welcomed and every pain avoided. <br />
+                and every pain avoided. certain circumstances ands
+              </p>
+              <a href="" class="commonbtn d-inline-flex gap-4"
+                >EXPLORE MORE
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide d-flex justify-content-around flex-wrap-reverse">
+            <div class="left-img col-12 col-lg-5">
+              <div class="back-img">
+                <img src="assets/image/frame.webp" alt="" class="frame" />
+                <img src="assets/image/like-twitter.webp" alt="" class="like" />
+                <img
+                  src="assets/image/certified.webp"
+                  alt=""
+                  class="certified"
+                />
+                <img
+                  src="assets/image/instagram.webp"
+                  alt=""
+                  class="instagram"
+                />
+              </div>
+              <div class="front-img">
+                <img src="assets/image/banner-hero.webp" alt="" />
+              </div>
+            </div>
+            <div class="right-content col-12 col-lg-6">
+              <div class="merketing-text">marketing consulting's</div>
+              <h1>
+                <div class="ino">Innovative</div>
+                <div class="solu">Solutions</div>
+              </h1>
+              <p class="py-3">
+                Every pleasure is to be welcomed and every pain avoided. <br />
+                and every pain avoided. certain circumstances ands
+              </p>
+              <a href="" class="commonbtn d-inline-flex gap-4"
+                >EXPLORE MORE
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="buisness-trend">
+      <div class="container d-flex flex-wrap py-5">
+        <div class="trend-left col-12 col-lg-5">
+          <h2>Business Trends</h2>
+          <p>Every pleasure is to be welcomed and every pain <br>
+            tavoided.and every pain avoided welcomed</p>
+            <h3>Our Creative Team</h3>
+            <div class="team-img">
+              <img src="assets/image/team-group.webp" alt="">
+            </div>
+        </div>
+        <div class="trend-right col-12 col-lg-7 mt-4 mt-lg-0">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="lunch-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h4>online assistance</h4>
+                  <p>Every pleasure is to be welcomed and every pain avoided</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="lunch-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h4>online assistance</h4>
+                <p>Every pleasure is to be welcomed and every pain avoided</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="lunch-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h4>online assistance</h4>
+                  <p>Every pleasure is to be welcomed and every pain avoided</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="lunch-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h4>online assistance</h4>
+                <p>Every pleasure is to be welcomed and every pain avoided</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+    </section>
+    <!-- who we are start here -->
+    <section class="who-we-are">
+      <div class="container d-flex justify-content-between flex-wrap align-items-center py-5">
+        <div class="who-we-are-left col-12 col-lg-6">
+          <img src="assets/image/merketing.webp" alt="" class="creative" />
+          <img src="assets/image/chart.webp" alt="" class="views" />
+          <img src="assets/image/proffesional-profile.webp" alt="" class="profile " />
+          <div class="left-img text-center">
+            <img src="assets/image/who-we-are-men.webp" class="" alt="" />
+          </div>
+        </div>
+        <div class="right-content col-12 col-lg-6 pe-lg-5">
+          <p class="small-title">WHO WE ARE</p>
+          <h2 class="section-title">We Develop & CrateDigital Future</h2>
+          <p class="section-paragraph ">Duis aute irure dolor in reprehendeirure dolor irit in volut
+            ate velit esse cillum dolDuis aute irure dolor in ore
+            accu santium fugiat nulla pariatur.</p>
+            <div class="brand d-flex justify-content-between align-items-center py-4 pb-5 flex-wrap">
+              <div class="left d-flex justify-content-between col-12 col-md-6 flex-wrap pe-3">
+                <div class="col-6 px-1">
+                  <div class="bard-card">
+                    <img src="assets/image/sopify.webp" alt="">
+                  </div>
+                </div>
+                <div class="col-6 px-1">
+                  <div class="bard-card">
+                    <img src="assets/image/amazon.webp" alt="">
+                  </div>
+                </div>
+                <div class="col-6 px-1 mt-2">
+                  <div class="bard-card">
+                    <img src="assets/image/alibaba.webp" alt="">
+                  </div>
+                </div>
+                <div class="col-6 px-1 mt-2">
+                  <div class="bard-card">
+                    <img src="assets/image/wallmart.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="right col-12 col-md-6 ps-3">
+                <div class="d-flex align-items-center gap-2"><div class="icon"><i class="fa-solid fa-tags"></i></div>Customer Support</div>
+                <div class="d-flex align-items-center gap-2 mt-3"><div class="icon"><i class="fa-brands fa-usb"></i></div>Individual Approach
+              </div>
+              </div>
+            </div>
+            <a href="" class="commonbtn d-inline-flex gap-4"
+                >EXPLORE MORE
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+        </div>
+      </div>
+    </section>
+    <!-- who we are end here -->
+    <section class="portfolio my-5">
+      <div class="container text-center">
+        <div class="small-title text-center"> <span></span> <p>OUR PORTFOLIO</p></div>
+        <h2 class="section-title">We Are A Creative Digital <br>
+          Marketing Agency</h2>
+      </div>
+      <div class="container-fluid px-0">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery1.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery2.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery3.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery1.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery2.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img">
+                <img src="assets/image/side-menu-gallery3.webp" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="" class="projectbtn">Cultural Festival</a>
+                <h4 class="section-sub-title">Rising Stars Obscure</h4>
+              </div>
+            </div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- service sectio start here -->
+    <section class="service py-5">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <div class="service-left col-12 col-lg-6 d-flex justify-content-between flex-wrap">
+          <div class="col-12 col-sm-6 p-2">
+            <div class="icon-card">
+              <div class="icon">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <h3 class="section-sub-title">Link Building </h3>
+              <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 p-2">
+            <div class="icon-card">
+              <div class="icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </div>
+              <h3 class="section-sub-title">Email Marketing</h3>
+              <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 p-2">
+            <div class="icon-card">
+              <div class="icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <h3 class="section-sub-title">Optimization</h3>
+              <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 p-2">
+            <div class="icon-card">
+              <div class="icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="section-sub-title">Development</h3>
+              <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-right col-12 col-lg-6 ps-lg-5">
+            <p class="small-title">TOP SERVICES</p>
+            <h2 class="section-title">Grow And ProsperWith Our Experts</h2>
+            <p class="section-paragraph py-4 ">Duis aute irure dolor in reprehendeirure dolor irit in volut <br>
+            ate velit esse cillum dolDuis aute irure dolor in ore <br>
+            accu santium fugiat nulla pariatur.</p>
+            <div class="completed-word d-flex gap-4 py-2">
+              <div class="left">
+                <img src="assets/image/work-left.webp" alt="">
+              </div>
+              <div class="right">
+                <p class="small-title text-capitalize text-black mb-0">Work Completed</p>
+                <h3>86,900+</h3>
+              </div>
+            </div>
+            <a href="" class="commonbtn d-inline-flex gap-4"
+                >EXPLORE MORE
+                <span><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+        </div>
+      </div>
+    </section>
+    <!-- service sectio end here -->
+    <!-- growth section start here -->
+    <section class="growth ">
+      <div class="container d-flex justify-content-between align-item-center flex-wrap">
+        <div class="growth-left col-12 col-lg-6">
+          <p class="small-title">WHO WE ARE</p>
+          <h2 class="section-title">Growt Your Business
+            Expert Sales</h2>
+          <p class="section-paragraph ">Duis aute irure dolor in reprehendeirure dolor irit in volut ate velit <br> esse cillum dolDuis aute irure dolor in ore accu          </p>
+          <div class="certifed-word d-flex gap-4 pb-5 py-2 flex-wrap">
+            <div class="left">
+              <img src="assets/image/growth-certified.webp" alt="">
+            </div>
+            <div class="right">
+              <p class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-regular fa-circle-check me-2"></i>692% Campaign ROI Exceeds</p>
+              <p class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-regular fa-circle-check me-2"></i> 8x The Number Of Keywords Sending</p>
+              <p class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-regular fa-circle-check me-2"></i> 296% Increase In Organic Traffic</p>
+              <p class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-regular fa-circle-check me-2"></i> Sed Ut Perspiciatis Unde</p>
+            </div>
+          </div>
+          <a href="" class="commonbtn d-inline-flex gap-4">EXPLORE MORE<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+        </div>
+        <div class="growth-right col-12 col-lg-2">
+           <div class="text-content py-3">
+            <h3 class="section-title ">12k</h3>
+            <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+           </div>
+           <div class="text-content py-4">
+            <h3 class="section-title ">70%</h3>
+            <p class="section-paragraph">Duis aute irure dolor in fot reprehendeirure dolor</p>
+           </div>
+        </div>
+        <div class="mobile-hand d-none d-lg-block">
+          <img src="assets/image/mobile-hand.webp" alt="">
+        </div>
+        <div class="star d-none d-lg-block">
+          <img src="assets/image/growth-bg-star.webp" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="pricing py-5">
+      <div class="container text-center">
+        <div class="small-title text-center"> <span></span> <p>PRICING PACKAGESE        </p></div>
+        <h2 class="section-title">Find Your Right Pland        </h2>
+      </div>
+      <div class=" pricing-container d-flex justify-content-around align-items-center">
+        <div class="col-lg-3 leftcard-container d-none d-lg-flex">
+          <div class="col-6  pricing-card-img pe-3">
+            <img src="assets/image/pricing-img1.webp" alt="">
+          </div>
+          <div class="col-6  pricing-card-img ps-3">
+            <img src="assets/image/pricing-img2.webp" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 pricing-carousel px-lg-3">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="assets/image/pricing-img1.webp" class="rounded-3" alt="">
+                </div>
+                <div class="card-content d-flex align-items-center py-4 flex-wrap">
+                  <div class="col-12 col-sm-5">
+                    <h3 class="section-sub-title text-capitalize"> unlimited plan</h3>
+                    <h4 class="section-title d-flex align-items-start"><span>$</span>316<span>.99</span></h4>
+                  </div>
+                  <ul class="col-12 col-sm-7 ps-lg-3 mt-3 mt-sm-0">
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> support at $25/hour</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> small social media package</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> unlimited fonts</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="assets/image/pricing-img2.webp" class="rounded-3" alt="">
+                </div>
+                <div class="card-content d-flex align-items-center py-4 flex-wrap">
+                  <div class="col-12 col-sm-5">
+                    <h3 class="section-sub-title text-capitalize"> unlimited plan</h3>
+                    <h4 class="section-title d-flex align-items-start"><span>$</span>316<span>.99</span></h4>
+                  </div>
+                  <ul class="col-12 col-sm-7 ps-lg-3 mt-3 mt-lg-0">
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> support at $25/hour</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> small social media package</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> unlimited fonts</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="assets/image/pricing-img3.webp" class="rounded-3" alt="">
+                </div>
+                <div class="card-content d-flex align-items-center py-4 flex-wrap">
+                  <div class="col-12 col-sm-5">
+                    <h3 class="section-sub-title text-capitalize"> unlimited plan</h3>
+                    <h4 class="section-title d-flex align-items-start"><span>$</span>316<span>.99</span></h4>
+                  </div>
+                  <ul class="col-12 col-sm-7 ps-lg-3 mt-3 mt-sm-0">
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> support at $25/hour</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> small social media package</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> unlimited fonts</li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="assets/image/pricing-img4.webp" class="rounded-3" alt="">
+                </div>
+                <div class="card-content d-flex align-items-center py-4 flex-wrap">
+                  <div class="col-12 col-sm-5">
+                    <h3 class="section-sub-title text-capitalize"> unlimited plan</h3>
+                    <h4 class="section-title d-flex align-items-start"><span>$</span>316<span>.99</span></h4>
+                  </div>
+                  <ul class="col-12 col-sm-7 ps-lg-3 mt-4 mt-sm-0">
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> support at $25/hour</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> small social media package</li>
+                    <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i> unlimited fonts</li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="badg text-center ms-auto"><p>Plan billed annually, US$199/year</p></div>
+                <a href="" class="pricing-btn text-center d-block">Purchase Now</a>
+        </div>
+        <div class="col-lg-3 d-none d-lg-flex">
+          <div class="col-6  pricing-card-img pe-3">
+            <img src="assets/image/pricing-img3.webp" alt="">
+          </div>
+          <div class="col-6  pricing-card-img ps-3">
+            <img src="assets/image/pricing-img4.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- testimonial section start here -->
+   <section class="testimonial ">
+     <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto testimonial-carousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-profile">
+              <img src="assets/image/pricing-img1.webp" alt="">
+            </div>
+            <p class="paragraph section-sub-title"> To my mind, the greatest reward for any renovation project is being able to expertience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood</p>
+            <div class="icon-name d-flex gap-4 justify-content-center align-items-center py-4">
+              <div class="icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="">
+                <h3 class="section-sub-title">Marko Marlee</h3>
+                <p>building corp</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-profile">
+              <img src="assets/image/pricing-img1.webp" alt="">
+            </div>
+            <p class="paragraph section-sub-title"> To my mind, the greatest reward for any renovation project is being able to expertience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood</p>
+            <div class="icon-name d-flex gap-4 justify-content-center align-items-center py-4">
+              <div class="icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="">
+                <h3 class="section-sub-title">Marko Marlee</h3>
+                <p>building corp</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-profile">
+              <img src="assets/image/pricing-img1.webp" alt="">
+            </div>
+            <p class="paragraph section-sub-title"> To my mind, the greatest reward for any renovation project is being able to expertience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality and lead to an elevated mood</p>
+            <div class="icon-name d-flex gap-4 justify-content-center align-items-center py-4">
+              <div class="icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="">
+                <h3 class="section-sub-title">Marko Marlee</h3>
+                <p>building corp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+       </div>
+      </div>
+     </div>
+
+      <div class="col-12 testimonial-brand col-lg-9 d-flex justify-content-center justify-content-lg-between align-items-center mx-auto flex-wrap">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-5 d-flex justify-content-center mt-lg-0">
+          <img src="assets/image/testimonial-ms.webp" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-5 d-flex justify-content-center mt-lg-0">
+            <img src="assets/image/testimonial-aesir.webp" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-5 d-flex justify-content-center mt-lg-0">
+          <img src="assets/image/testimonial-twaajd.webp" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-5 d-flex justify-content-center mt-lg-0">
+            <img src="assets/image/testimonial-markado.webp" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-5 d-flex justify-content-center mt-lg-0">
+            <img src="assets/image/testimonial-pure.webp" alt="">
+        </div>
+     </div>
+   </section>
+   <!-- testimonial section end here -->
+
+   <section class="professinal">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="professinal-left col-12 col-lg-6 pe-lg-5">
+        <div class="front-img">
+          <img src="assets/image/professinal-left.webp" class="w-100" alt="">
+        </div>
+        <div class="back-img">
+          <img src="assets/image/professional-left-bg.webp" alt="">
+        </div>
+      </div>
+      <div class="professinal-right col-12 col-lg-6 my-5 my-lg-0">
+        <p class="small-title"> PROFESSIONAL APPROACH</p>
+        <h2 class="section-title">Generate 100% Traffic
+          On Your Website</h2>
+        <p class="section-paragraph py-4">Duis aute irure dolor in reprehendeirure dolor irit in volut ate velit <br> esse cillum dolDuis aute irure dolor in ore accu</p>
+        <ul class="col-12 col-lg-7 ">
+          <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i>Evolving Customer Expectations</li>
+          <li class="small-title text-capitalize text-black mb-0 my-2 "><i class="fa-solid fa-circle-check pe-1"></i>Automated And Paperlees Eamless</li>
+        </ul>
+        <div class="d-flex my-5 flex-wrap">
+          <div class=" circle d-flex gap-4  col-12 col-md-6 col-lg-5 align-items-center">
+            <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill"></div>
+            </div>
+            <div class="inside-circle"> 90% </div>
+          </div>
+        </div>
+            <h3>Client Satisfied</h3>
+          </div>
+          <div class=" circle d-flex gap-4  col-12 col-md-6 col-lg-5 align-items-center mt-4 mt-md-0">
+            <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill"></div>
+            </div>
+            <div class="inside-circle"> 90% </div>
+          </div>
+        </div>
+            <h3>Finance  Consulting</h3>
+          </div>
+         </div>
+        <a href="" class="commonbtn d-inline-flex gap-4">EXPLORE MORE<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+      </div>
+    </div>
+    <div class="animation-text d-flex">
+      <ul class="d-flex justify-content-between gap-4 align-items-center">
+        <li>Marketing</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Branding</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Development</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li>  Branding </li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Feedbox</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Screen Cast</li>
+      </ul>
+      <ul class="d-flex justify-content-between gap-4 align-items-center">
+        <li>Marketing</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Branding</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Development</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li>  Branding </li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Feedbox</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Screen Cast</li>
+      </ul>
+      <ul class="d-flex justify-content-between gap-4 align-items-center">
+        <li>Marketing</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Branding</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Development</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li>  Branding </li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Feedbox</li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="33px"><path fill-rule="evenodd" stroke-width="2px" stroke="rgb(4, 4, 4)" fill="rgb(95, 215, 255)" d="M15.817,5.820 L29.629,5.749 L18.811,27.768 L5.0,27.839 L15.817,5.820 Z"></path></svg>
+        <li> Screen Cast</li>
+      </ul>
+    </div>
+   </section>
+
+   <section class="blog py-5">
+    <div class="container text-center">
+      <div class="small-title text-center"> <span></span> <p>OUR NEWS</p></div>
+      <h2 class="section-title">Recent Blog Posts</h2>
+    </div>
+    <div class="container d-flex justify-content-between flex-wrap py-4">
+      <div class="col-lg-4 px-2">
+        <div class="blog-card">
+          <div class="card-img">
+            <img src="assets/image/side-menu-gallery1.webp" class="w-100" alt="">
+          </div>
+          <span class="badg">Email Marketing</span>
+          <h3 class="section-subtitle">Use Keywords Strategically Throughout The Blog</h3>
+          <ul class="d-flex gap-3 align-items-center">
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-user-large"></i><p> By Choicy</p></li>
+            <span class="line"></span>
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-calendar-day"></i><p> January 10, 2024</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 px-2">
+        <div class="blog-card">
+          <div class="card-img">
+            <img src="assets/image/side-menu-gallery2.webp" class="w-100" alt="">
+          </div>
+          <span class="badg">Email Marketing</span>
+          <h3 class="section-subtitle">Use Keywords Strategically Throughout The Blog</h3>
+          <ul class="d-flex gap-3 align-items-center">
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-user-large"></i><p> By Choicy</p></li>
+            <span class="line"></span>
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-calendar-day"></i><p> January 10, 2024</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 px-2">
+        <div class="blog-card">
+          <div class="card-img">
+            <img src="assets/image/side-menu-gallery3.webp" class="w-100" alt="">
+          </div>
+          <span class="badg">Clock Fly Strategy          </span>
+          <h3 class="section-subtitle">Spending Habits, 13 Tips For Grow Your Money.</h3>
+          <ul class="d-flex gap-3 align-items-center">
+          <ul class="d-flex gap-3 align-items-center">
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-user-large"></i><p> By Choicy</p></li>
+            <span class="line"></span>
+            <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-calendar-day"></i><p> January 10, 2024</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </section>
+   
+   <!-- footer sectio start here -->
+   <footer>
+   <footer>
+    <div class="container d-flex flex-wrap align-items-center">
+      <div class="footer-left col-12 col-lg-6">
+        <h2>Let's <img src="assets/image/footer-4angle.webp" alt=""> <br>
+          Connect.</h2>
+          <p class="section-paragraph">Quisquam Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, <br> Consecte Adipisci Velit, Sed Quia Non Numquam Eius <br> Modi Tempora Incidu Labore Et Dolore Magnam.</p>
+        <ul class="social-link">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </ul>
+        <p class="copyright">© Copyright 2024 By Themexriver.Com</p>
+      </div>
+      <div class="footer-right col-12 col-lg-6">
+        <div class="footer-right-top d-flex justify-content-between flex-wrap py-3">
+          <ul class="col-12 col-sm-3">
+            <h3>Services</h3>
+            <li><a href="">Recycling</a></li>
+            <li><a href="">Ecosystem</a></li>
+            <li><a href="">Organic</a></li>
+            <li><a href="">Biology</a></li>
+          </ul>
+          <ul class="col-12 col-sm-3">
+            <h3>Links</h3>
+            <li><a href="">Help</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Client</a></li>
+          </ul>
+          <form class="col-12 col-sm-6">
+            <h3 class="mb-3">Newsletter</h3>
+            <input type="email" placeholder="Enter Your Email"> <br>
+            <button type="submit" class="footerbtn">Subscribe</a>
+          </ul>  
+        </div>
+        <div class="footer-right-bottom py-3">
+          <h3 class="section-sub-title">Our Team</h3>
+          <div class="d-flex flex-wrap">
+            <div class="col-12 col-sm-6 col-md-3 footer-team-img pe-2 mt-3 mt-md-0">
+              <img src="assets/image/footer-img1.webp" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 footer-team-img pe-2 mt-3 mt-md-0">
+              <img src="assets/image/footer-img2.webp" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 footer-team-img pe-2 mt-3 mt-md-0">
+              <img src="assets/image/footer-img3.webp" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 footer-team-img pe-2 mt-3 mt-md-0">
+              <img src="assets/image/footer-img4.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+   </footer>
+
+
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"   
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
